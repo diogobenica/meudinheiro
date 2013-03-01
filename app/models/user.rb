@@ -3,4 +3,5 @@ class User < ActiveRecord::Base
   has_many :transactions
 
   validates :email, :presence => true
+  validates :name, :presence => true
 end

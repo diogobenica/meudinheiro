@@ -7,7 +7,6 @@ describe Transaction do
 
   context "without required fields" do
     it "should not be valid without description" do
-      debugger
       FactoryGirl.build(:transaction, :description => "").should_not be_valid
     end
     it "should not be valid without transaction_date" do
